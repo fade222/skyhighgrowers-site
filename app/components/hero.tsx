@@ -15,15 +15,10 @@ export default function Hero() {
       <div className="flex bg-gradient-to-t w-full from-green-800 p-10 absolute bottom-0 left-0"></div>
       <div className="absolute top-24 left-6 transform">
         <h2 className="text-5xl font-semibold text-green-100 p-6">
-          The only
-          <span className="text-white"> commercial </span> coriander
+          The
+          <span className="text-white"> only </span>commercial coriander
           <span className="text-white"> grower</span> in Canterbury.
         </h2>
-        {/* <h2 className="text-5xl font-semibold text-green-100 p-6">
-          <span className="text-white">#1</span> vegetable{" "}
-          <span className="text-white">grower</span> south of the{" "}
-          <span className="text-white">Waimak</span>.
-        </h2> */}
       </div>
     </div>
   );

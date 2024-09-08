@@ -5,7 +5,7 @@ import { format } from "date-fns";
 // ------------------------------
 const dateFormatter = (
   date: string,
-  structure: "do MMM, yyyy" | "MMM do, yyyy"
+  structure: "do MMM, yyyy" | "MMM do, yyyy" | "MMM dd, yyyy"
 ) => {
   return format(new Date(date), structure);
 };

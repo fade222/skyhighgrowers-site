@@ -8,12 +8,12 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import React from "react";
-import SubNav from "../components/subNav";
+import ContactNav from "../components/contactNav";
 
 export default function contact() {
   return (
     <>
-      <SubNav />
+      <ContactNav />
       <div className="">
         <div className="p-10 mt-6">
           <h2 className="uppercase mt-10 font-bold text-2xl text-teal-500">

@@ -41,17 +41,19 @@ export default function card({
             <p className="w-full text-slate-900 text-sm mt-4">{cropDetails}</p>
           </div>
 
-          <div className="mt-6 text-sm text-slate-600">
-            <p className="text-sm font-semibold text-slate-900">
-              Harvest Shedule:
-            </p>
-            <p className="font-bold ">
-              {dateFormatter(harvestDate, "MMM do, yyyy")}
+          <div className="mt-6 text-sm font-medium text-slate-600">
+            <p className="text-sm text-slate-700">
+              Harvest:
+              <span className="pl-1 text-slate-900">
+                {dateFormatter(harvestDate, "MMM dd, yyyy")}
+              </span>
             </p>
           </div>
-          <div className="mt-5 text-sm flex text-slate-700">
-            <p>Expected Yield:</p>
-            <p className="ml-2">{cropYield}</p>
+          <div className="mt-2 text-sm font-medium text-slate-600">
+            <p className="text-sm text-slate-700">
+              Yield:
+              <span className="pl-1 text-slate-900">{cropYield}</span>
+            </p>
           </div>
         </div>
       </div>
