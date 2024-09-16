@@ -21,7 +21,7 @@ export default function card({
 }: CropCardProps) {
   return (
     <div>
-      <div className="flex font-sans m-10  rounded-xl shadow-lg border bg-white">
+      <div className="flex font-sans m-10 rounded-xl shadow-lg border bg-white  max-w-xl mx-auto">
         <div className="flex-none w-48 relative">
           <Image
             className="h-full rounded-l-xl object-cover"

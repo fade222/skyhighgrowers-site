@@ -11,11 +11,11 @@ export default function nav() {
           </svg>
           <h1 className="text-nowrap">SKY GROWERS</h1>
         </Link>
-        <div className="text-green-300 font-medium text-sm px-4 py-2.5 mb-2">
+        <div className="text-green-300 font-medium text-sm px-4 py-1 my-2">
           <span className="p-1 text-sm">Home</span>
         </div>
         <Link
-          className="hover:text-white text-green-300 border-2 border-green-300 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-green-300 shadow-green-500/50 font-medium rounded-2xl text-sm px-2 py-2.5 text-center me-2 mb-2"
+          className="hover:text-white text-green-300 border-2 border-green-300 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-green-300 shadow-white font-medium rounded-2xl text-sm px-2 text-center mt-1 py-3"
           href="/contact"
         >
           <span className="p-1 text-sm">Contact</span>
