@@ -12,14 +12,11 @@ export default function nav() {
           <h1 className="text-nowrap">SKY GROWERS</h1>
         </Link>
         <Link
-          className="text-green-300 hover:text-white border-2 border-green-300 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-green-300 shadow-green-900/50 font-medium rounded-2xl text-sm px-4 py-2.5 text-center mb-2"
+          className="hover:text-white text-green-300 focus:ring-2 focus:outline-none focus:ring-green-300 shadow-white font-medium text-sm border-b-2 border-green-300 hover:border-white mx-3 pt-3 mb-3 "
           href="/"
         >
-          <span className="p-1 text-sm">Home</span>
+          Home
         </Link>
-        <div className="text-green-300 text-sm px-2 py-2.5 mb-2">
-          <span className="p-1 text-sm">Contact</span>
-        </div>
       </div>
     </div>
   );

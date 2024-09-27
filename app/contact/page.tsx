@@ -15,11 +15,7 @@ export default function contact() {
     <>
       <ContactNav />
       <div className="">
-        <div className="p-10 mt-6">
-          <h2 className="uppercase mt-10 font-bold text-2xl text-teal-500">
-            contact
-          </h2>
-
+        <div className="p-10 mt-6 lg:mx-96">
           <div className="flex border shadow-lg rounded-xl p-8 items-center mt-10">
             <BuildingOfficeIcon className="size-8 text-teal-500 " />
             <p className="ml-10 border-l-2 pl-4"> Sky Growers Limited</p>

@@ -15,9 +15,7 @@ export default async function Page() {
     <div>
       <Nav />
       <Hero />
-      <div className="bg-gradient-to-b text-white from-green-800 to-green-600 p-10"></div>
-      <div className="-mt-28"></div>
-
+      <div className="-mt-24"></div>
       {crops.length > 0 && (
         <ul>
           {crops.map((crop) => (

@@ -10,14 +10,14 @@ import React from "react";
 
 export default function footer() {
   return (
-    <div className=" bg-gradient-to-t from-green-800 from-90% to-green-600 p-10 text-green-200 text-sm py-4 pt-20">
+    <div className=" bg-gradient-to-t from-green-800 from-90% to-green-600 p-10 text-green-200 text-sm lg:text-base py-4 pt-20">
       <p className="px-8 text-center italic">
         Coriander, spinach, silverbeet, and spring onion specialists.
       </p>
       <hr className="my-4 mx-16 border-green-200 border-1" />
 
       <svg
-        className="w-96 mx-auto mt-8"
+        className="max-w-96 mx-auto mt-8"
         viewBox="0 0 6880 4580"
         fill="none"
         stroke="#bbf7d0"
@@ -28,7 +28,7 @@ export default function footer() {
       <hr className="my-4 mx-24 border-green-200 border-1" />
       <Link href="/">
         <p className="mx-auto w-max pt-2 text-green-200">Sky Growers Limited</p>
-        <p className="mx-auto w-max pt-2 text-xs text-green-200">
+        <p className="mx-auto w-max pt-2 text-xs lg:text-base text-green-200">
           480 Pound Road, Yaldhurst, Christchurch, New Zealand
         </p>
       </Link>
