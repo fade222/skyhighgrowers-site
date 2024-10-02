@@ -20,7 +20,7 @@ export default function card({
   cropDetails,
 }: CropCardProps) {
   return (
-    <div className="grid grid-cols-6 font-sans m-10 lg:mx-96 lg:h-64 rounded-xl shadow-lg border isolate bg-white">
+    <div className="grid grid-cols-6 font-sans m-10 lg:mx-96 lg:h-64 rounded-xl shadow-lg shadow-green-800/20 border isolate bg-white">
       <div className="col-span-2 relative">
         <Image
           className=" rounded-l-xl object-cover"
