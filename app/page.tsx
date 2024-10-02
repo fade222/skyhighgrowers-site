@@ -10,11 +10,12 @@ const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function Page() {
   const crops = await reader.collections.crops.all();
+  const headingText = await reader.singletons.headings.read();
 
   return (
     <div>
       <Nav />
-      <Hero />
+      {headingText && <Hero heroText={headingText.hero} />}
       <div className="-mt-24"></div>
       {crops.length > 0 && (
         <ul>

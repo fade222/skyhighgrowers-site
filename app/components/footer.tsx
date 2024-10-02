@@ -8,12 +8,14 @@ import {
 import Link from "next/link";
 import React from "react";
 
-export default function footer() {
+export interface footerProps {
+  footerText: string;
+}
+
+export default function footer({ footerText }: footerProps) {
   return (
     <div className=" bg-gradient-to-t from-green-800 from-90% to-green-600 p-10 text-green-200 text-sm lg:text-base py-4 pt-20">
-      <p className="px-8 text-center italic">
-        Coriander, spinach, silverbeet, and spring onion specialists.
-      </p>
+      <p className="px-8 text-center italic">{footerText}</p>
       <hr className="my-4 mx-16 border-green-200 border-1" />
 
       <svg

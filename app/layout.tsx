@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "./../keystatic.config";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -11,16 +16,17 @@ export const metadata: Metadata = {
     "Coriander, spring onion, spinach, and silverbeet grower specialist.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headingText = await reader.singletons.headings.read();
   return (
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <Footer />
+        {headingText && <Footer footerText={headingText.footer} />}
       </body>
     </html>
   );
