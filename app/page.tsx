@@ -10,6 +10,7 @@ const reader = createReader(process.cwd(), keystaticConfig);
 
 export default async function Page() {
   const crops = await reader.collections.crops.all();
+  const publishedCrops = crops.filter((crop) => crop.entry.draft === false);
   const headingText = await reader.singletons.headings.read();
 
   return (
@@ -23,16 +24,20 @@ export default async function Page() {
         }
       />
       <div className="-mt-24"></div>
-      {crops.length > 0 && (
+      {publishedCrops.length > 0 && (
         <ul>
-          {crops.map((crop) => (
+          {publishedCrops.map((crop) => (
             <li key={crop.slug}>
               <Card
                 name={crop.entry.commonName ? crop.entry.commonName : ""}
                 scientificName={
                   crop.entry.scientificName ? crop.entry.scientificName : ""
                 }
-                cropPhoto={crop.entry.cropPhoto ? crop.entry.cropPhoto : ""}
+                cropPhoto={
+                  crop.entry.cropPhoto
+                    ? crop.entry.cropPhoto
+                    : "/public/images/cropPhoto/placeholder.jpeg"
+                }
                 cropDetails={
                   crop.entry.cropDetails ? crop.entry.cropDetails : ""
                 }
