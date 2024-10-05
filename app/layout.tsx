@@ -26,7 +26,13 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        {headingText && <Footer footerText={headingText.footer} />}
+        <Footer
+          footerText={
+            headingText
+              ? headingText.footer
+              : "Coriander, spinach, silverbeet, and spring onion specialists."
+          }
+        />
       </body>
     </html>
   );

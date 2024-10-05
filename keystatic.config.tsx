@@ -32,6 +32,10 @@ export default config({
       path: "crops/*",
       format: { contentField: "body" },
       schema: {
+        draft: fields.checkbox({
+          label: "Draft",
+          description: "Set as draft to prevent from being published",
+        }),
         commonName: fields.slug({ name: { label: "Common Name" } }),
         scientificName: fields.text({ label: "Scientific Name" }),
         body: fields.markdoc({ label: "Body" }),

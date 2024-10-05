@@ -15,19 +15,31 @@ export default async function Page() {
   return (
     <div>
       <Nav />
-      {headingText && <Hero heroText={headingText.hero} />}
+      <Hero
+        heroText={
+          headingText
+            ? headingText.hero
+            : "The only commercial coriander grower in Canterbury."
+        }
+      />
       <div className="-mt-24"></div>
       {crops.length > 0 && (
         <ul>
           {crops.map((crop) => (
             <li key={crop.slug}>
               <Card
-                name={crop.entry.commonName}
-                scientificName={crop.entry.scientificName}
-                cropPhoto={crop.entry.cropPhoto}
-                cropDetails={crop.entry.cropDetails}
-                harvestDate={crop.entry.harvestDate}
-                cropYield={crop.entry.cropYield}
+                name={crop.entry.commonName ? crop.entry.commonName : ""}
+                scientificName={
+                  crop.entry.scientificName ? crop.entry.scientificName : ""
+                }
+                cropPhoto={crop.entry.cropPhoto ? crop.entry.cropPhoto : ""}
+                cropDetails={
+                  crop.entry.cropDetails ? crop.entry.cropDetails : ""
+                }
+                harvestDate={
+                  crop.entry.harvestDate ? crop.entry.harvestDate : ""
+                }
+                cropYield={crop.entry.cropYield ? crop.entry.cropYield : ""}
               />
             </li>
           ))}

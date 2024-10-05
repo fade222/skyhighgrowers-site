@@ -30,7 +30,7 @@ export default function card({
         />
       </div>
 
-      <div className="grid col-span-4 pl-2 lg:p-4 grid-rows-4">
+      <div className="grid col-span-4 pl-2 lg:p-4 grid-rows-3">
         <div className="lg:flex lg:items-baseline">
           <h1 className="text-2xl lg:text-4xl font-semibold text-slate-900">
             {name}
@@ -44,17 +44,15 @@ export default function card({
           {cropDetails}
         </p>
 
-        <p className="mt-4 text-sm lg:text-base font-medium  text-slate-900">
+        <div className="mt-4 mb-2 text-sm lg:text-base font-medium  text-slate-900">
           Harvest:
           <span className="pl-1 font-normal text-slate-900">
             {dateFormatter(harvestDate, "MMM dd, yyyy")}
-          </span>
-        </p>
-
-        <p className="text-sm lg:text-base font-medium text-slate-700">
+          </span>{" "}
+          <br />
           Yield:
           <span className="pl-1 font-normal text-slate-900">{cropYield}</span>
-        </p>
+        </div>
       </div>
     </div>
   );
