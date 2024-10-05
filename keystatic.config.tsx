@@ -4,7 +4,10 @@ export const markdocConfig = fields.markdoc.createMarkdocConfig({});
 
 export default config({
   storage: {
-    kind: "local",
+    kind: "cloud",
+  },
+  cloud: {
+    project: "sky-growers/skygrowers-site",
   },
   ui: {
     brand: {
