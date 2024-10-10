@@ -36,7 +36,7 @@ export default async function Page() {
                 cropPhoto={
                   crop.entry.cropPhoto
                     ? crop.entry.cropPhoto
-                    : "/public/images/cropPhoto/placeholder.jpeg"
+                    : "/images/cropPhoto/placeholder.jpeg"
                 }
                 cropDetails={
                   crop.entry.cropDetails ? crop.entry.cropDetails : ""
