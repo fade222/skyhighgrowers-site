@@ -14,7 +14,7 @@ export default function contact() {
   return (
     <>
       <ContactNav />
-      <div className=''>
+      <div className='bg-white'>
         <div className='mt-6 p-6 md:p-10 lg:mx-96'>
           <div className='mt-10 flex items-center rounded-xl border p-8 shadow-lg shadow-green-800/20'>
             <BuildingOfficeIcon className='size-8 w-16 text-teal-500' />
