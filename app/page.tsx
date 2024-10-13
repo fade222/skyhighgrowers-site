@@ -25,7 +25,7 @@ export default async function Page() {
       />
       <div className='-mt-24'></div>
       {publishedCrops.length > 0 && (
-        <ul>
+        <ul className='bg-white'>
           {publishedCrops.map((crop) => (
             <li key={crop.slug}>
               <Card

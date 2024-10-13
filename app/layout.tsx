@@ -24,7 +24,9 @@ export default async function RootLayout({
   const headingText = await reader.singletons.headings.read();
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body
+        className={`bg-gradient-to-t from-green-600 to-green-800 ${inter.className}`}
+      >
         {children}
         <Footer
           footerText={
