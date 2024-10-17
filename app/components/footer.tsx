@@ -14,7 +14,7 @@ export interface footerProps {
 
 export default function footer({ footerText }: footerProps) {
   return (
-    <div className='bg-gradient-to-t from-green-800 from-90% to-green-600 p-10 py-4 pt-20 text-sm text-green-200 lg:text-base'>
+    <div className='h-dvh bg-gradient-to-t from-green-800 from-90% to-green-600 p-10 py-4 pt-20 text-sm text-green-200 lg:text-base'>
       <p className='px-8 text-center italic'>{footerText}</p>
       <hr className='border-1 mx-16 my-4 border-green-200' />
 
