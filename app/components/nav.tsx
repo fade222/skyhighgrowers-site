@@ -13,7 +13,7 @@ export default function nav() {
         </Link>
 
         <Link
-          className='mb-2 rounded-lg border-2 border-green-300 p-2 text-sm font-medium text-green-300 shadow-white hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-300 lg:text-xl'
+          className='mb-2 rounded-lg border-2 border-green-300 p-2 text-sm font-medium text-green-300 shadow-white hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-300 lg:mb-0 lg:px-3 lg:text-xl'
           href='/contact'
         >
           Contact
